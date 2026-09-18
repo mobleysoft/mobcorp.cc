@@ -94,22 +94,6 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-    <!-- MASCOM_ANALYTICS_CORTEX -->
-    <script>
-        (function() {
-            try {
-                const payload = {
-                    node: "mobcorp.cc",
-                    timestamp: new Date().toISOString(),
-                    vector: window.location.pathname,
-                    agent: navigator.userAgent
-                };
-                navigator.sendBeacon("http://127.0.0.1:8889/track", JSON.stringify(payload));
-            } catch(e) {}
-        })();
-    </script>
-    
 </head>
 <body>
     <div id="canvas-container"></div>
@@ -117,25 +101,19 @@
     <div class="glass-panel">
         <div style="display: flex; align-items: center; margin-bottom: 20px;">
             <div class="status-dot"></div>
-            <span style="color: var(--text-muted); font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase;">SOVEREIGN NODE ACTIVE</span>
+            <span style="color: var(--text-muted); font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase;">Holding company, concept stage</span>
         </div>
         <h1>MOBCORP.CC</h1>
         <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; max-width: 600px;">
-            Premium, enigmatic, hyper-modern. Physical environment protocol: base_verse_nexus.
+            Central AI orchestration platform and holding company managing the MobCorp portfolio of ventures. This concept is still concept-stage &mdash; no bespoke orchestration backend exists yet. The one real, live product under this domain today is a company-filings search tool, linked below.
         </p>
-        
+
         <div class="metrics">
             <div class="metric-card">
-                <div class="metric-value">99.9%</div>
-                <div class="metric-label">Neural Coherence</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-value">0ms</div>
-                <div class="metric-label">API Latency</div>
-            </div>
-            <div class="metric-card">
-                <div class="metric-value">LOCAL</div>
-                <div class="metric-label">Execution Vector</div>
+                <a href="https://mobcorp.cc/" style="color: inherit; text-decoration: none; display: block;">
+                    <div class="metric-value" style="font-size: 1.1rem;">SEC Filings Search</div>
+                    <div class="metric-label">Live product &mdash; free tier + $4 Pro tier</div>
+                </a>
             </div>
         </div>
     </div>
@@ -210,12 +188,9 @@
         });
     </script>
 
-    <!-- MASCOM_INTERLINK -->
     <div style="position: absolute; bottom: 20px; right: 40px; z-index: 100; font-family: monospace; font-size: 0.7rem; letter-spacing: 0.1em; display: flex; gap: 20px;">
-        <a href="blog.html" style="color: #00ffcc; text-decoration: none; text-shadow: 0 0 5px rgba(0,255,204,0.3); transition: color 0.2s;">INTELLIGENCE CORTEX</a>
-        
-        <a href="http://localhost:8888" style="color: #888; text-decoration: none; transition: color 0.2s;">SOVEREIGN GATEWAY</a>
+        <a href="blog.html" style="color: #00ffcc; text-decoration: none; text-shadow: 0 0 5px rgba(0,255,204,0.3); transition: color 0.2s;">NOTES</a>
     </div>
-    
+
 </body>
 </html>
